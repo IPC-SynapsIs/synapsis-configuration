@@ -2,14 +2,14 @@ FROM java:8
 
 MAINTAINER Mehdi Alaoui <mohamed.basri@capgemini.com>
 
-ADD *.jar /app/app.jar
-ADD docker/run.sh /app/
+ADD *.jar /etc/synapsis/synapsis-configuration/synapsis-configuration.jar
+ADD docker/run.sh /etc/synapsis/synapsis-configuration
 
-RUN chmod +x /app/app.jar
-RUN chmod +x /app/run.sh
+RUN chmod +x /etc/synapsis/synapsis-configuration/synapsis-configuration.jar
+RUN chmod +x /etc/synapsis/synapsis-configuration/run.sh
 
 EXPOSE 8888
 
 ENTRYPOINT ["bash","run.sh"]
 
-WORKDIR /app
+WORKDIR /etc/synapsis/synapsis-configuration/
