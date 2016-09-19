@@ -1,9 +1,9 @@
 FROM java:8
 
-MAINTAINER Mehdi Alaoui <mehdi.alaoui@capgemini.com>
+MAINTAINER Mehdi Alaoui <mohamed.basri@capgemini.com>
 
-ADD build/libs/*.jar /app/app.jar
-ADD src/main/resources/docker/run.sh /app/
+ADD *.jar /app/app.jar
+ADD docker/run.sh /app/
 
 RUN chmod +x /app/app.jar
 RUN chmod +x /app/run.sh
