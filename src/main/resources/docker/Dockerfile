@@ -1,6 +1,6 @@
 FROM java:8
 
-MAINTAINER Mehdi Alaoui <mohamed.basri@capgemini.com>
+MAINTAINER Mohamed BASRI <mohamed.basri@capgemini.com>
 
 ADD *.jar /etc/synapsis/synapsis-configuration/synapsis-configuration.jar
 ADD docker/run.sh /etc/synapsis/synapsis-configuration/run.sh

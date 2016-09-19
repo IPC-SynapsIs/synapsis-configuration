@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-java -jar app.jar
+java -jar synapsis-configuration.jar
